@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML page</title>
+    <link rel="icon" href="/img/html.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Content:wght@400;700&family=Khmer&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Content:wght@400;700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Khmer&family=Playwrite+GB+J+Guides:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+           /* font-family: "Edu AU VIC WA NT Guides", cursive;
+            */
+                font-family: "Playwrite GB J Guides", cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color:#04AABD;">Basic HTMl</h1>
+    <a href="#image-content">Go to image content</a>
+    <h2 style="font-size: 20px;">Basic HTMl</h2>
+    <h3>Basic HTMl</h3>
+    <h4>Basic HTMl</h4>
+    <h5>Basic HTMl</h5>
+    <h6>Basic HTMl</h6>
+
+    <p style="font-weight: 600;">This is a simple paragraph. It is not very long. a powerful and popular front-end web
+        application framework
+        developed and maintained by Google. It is mainly used for building dynamic, modern, and responsive web
+        the entire page every time they click a button or navigate to another section. Angular helps developers organize
+        their code in a clean and structured way, making large projects easier to manage, maintain, and scale in the
+        future.
+    </p>
+
+    <h1>Student List</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Major</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>A</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bob</td>
+            <td>B+</td>
+            <td>Engineering</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Charlie</td>
+            <td>A-</td>
+            <td>Biology</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bob</td>
+            <td>B</td>
+            <td>Economics</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Charlie</td>
+            <td>A</td>
+            <td>English</td>
+        </tr>
+    </table>
+
+    <h1>Student schedule (with colspan)</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>57</td>
+        </tr>
+    </table>
+
+    <h1>Student Phone List (With rowspan)</h1>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>123-456-7890</td>
+        </tr>
+        <tr>
+            <td>098-765-4321</td>
+        </tr>
+    </table>
+
+    <h1>HTMl Form</h1>
+    <h2>Sign in Form</h2>
+    <form action="/submit-form" method="post">
+        <label for="email" value="enter">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" name="password" required><br><br>
+
+        <!-- <label>
+            <input type="checkbox"  name="remember" value="yes">
+            Remember me
+        </label> -->
+
+        <label for="remember">
+            <input type="checkbox" id="remember" name="remember" value="yes">
+            Remember me
+        </label>
+        <br>
+        <br>
+
+        <input type="submit" value="Sign In">
+    </form>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <hr>
+
+    <h1>Sign up Form</h1>
+    <form action="/submit-form" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" name="fullname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" name="password" required><br><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" name="confirm-password"
+            required><br><br>
+
+        <label for="phonenumber">Phone Number:</label>
+        <input type="tel" id="phonenumber" placeholder="Enter your phone number" name="phonenumber" required><br><br>
+
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="gender-male" name="gender" value="male">
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female">
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-other" name="gender" value="other">
+        <label for="gender-other">Other</label><br><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <hr>
+
+
+    <h1>Contact form</h1>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br /><br />
+        <textarea id="message" placeholder="Enter your message" name="message" rows="5" cols="40"
+            required></textarea><br><br>
+
+        <button>send</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <hr>
+
+
+
+
+    <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod sit veritatis deserunt placeat nam
+        aliquam impedit, vitae veniam vero obcaecati, voluptas architecto quo minima soluta excepturi sunt. Nostrum,
+        hic.</div>
+    <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod sit veritatis deserunt placeat nam
+        aliquam impedit, vitae veniam vero obcaecati, voluptas architecto quo minima soluta excepturi sunt. Nostrum,
+        hic.</span>
+    <div> hello <span>world</span></div>
+    <span>hello</span> <span>world</span>
+    <div>hello</div>
+    <div>world</div>
+
+
+
+    <h1> HTML list Example </h1>
+
+    <a href="">Ordered List (OL)</a>
+    <h2>Numbers (Default)</h2>
+    <ol>
+        <li>Firt Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <h2>Uppercase Letters</h2>
+    <ol style="list-style-type: upper-alpha;">
+        <li>Firt Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <h2>Lowercase Letters</h2>
+    <ol style="list-style-type: lower-alpha;">
+        <li>Firt Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <a href="">Unordered List (UL)</a>
+
+    <h2>Disc bullets (Default)</h2>
+    <ul>
+        <li>Firt Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+    <h2>Circle bullets</h2>
+    <ul style="list-style-type: circle;">
+        <li>Firt Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+    <h2>Square bullets</h2>
+    <ul style="list-style-type: square;">
+        <li>Firt Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+    <h2>No bullets</h2>
+    <ul style="list-style-type: none;">
+        <li>Firt Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+
+
+
+
+
+
+    <a href="https://www.w3schools.com/">Go to W3Schools</a>
+    <br>
+    <!-- use target="_blank" to open the link in a new tab -->
+    <a href="about-us.html" target="_blank">Go to about us page</a>
+
+    <hr>
+
+    <h2 id="image-content">Image</h2>
+    <img src="/img/angkorwat.png" alt="Angkor Wat">
+    <p>Angular is a powerful and popular front-end web application framework developed and maintained by Google. It is
+        mainly used for building dynamic, modern, and responsive web applications. Developers use Angular to create
+        single-page applications (SPA), where users can interact with the website smoothly without reloading the entire
+        page every time they click a button or navigate to another section. Angular helps developers organize their code
+        in a clean and structured way, making large projects easier to manage, maintain, and scale in the future.
+        One of the most important features of Angular is its component-based architecture. In Angular, a web application
+        is divided into small reusable components. Each component contains its own HTML template, CSS styles, and
+        TypeScript logic. This makes development more organized because developers can reuse components in different
+        parts of the application instead of writing the same code repeatedly. For example, a navigation bar, footer,
+        login form, or product card can each be created as separate components and reused whenever needed.
+        Angular uses TypeScript as its main programming language. TypeScript is an extended version of JavaScript that
+        includes additional features such as static typing, interfaces, and object-oriented programming concepts. Using
+        TypeScript helps developers detect errors earlier during development and improves code readability and
+        maintainability. Because of this, Angular is especially suitable for large-scale enterprise applications where
+        code quality and long-term maintenance are very important.
+        Another important feature of Angular is two-way data binding. This feature automatically synchronizes data
+        between the user interface and the application log</p>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
